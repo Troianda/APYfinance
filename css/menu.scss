@@ -1,0 +1,28 @@
+.menu-m {
+  display: none;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  &.active {
+    display: flex;
+    position: absolute;
+  }
+}
+
+.toasts {
+  display: none;
+  position: absolute;
+  height: 30px;
+  width: 100px;
+  background: #330d7b;
+
+  &.active {
+    display: block;
+    position: absolute;
+    top: 50;
+  }
+}

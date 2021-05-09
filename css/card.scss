@@ -1,0 +1,51 @@
+.card {
+  background-color: rgba(24, 20, 62, 0.65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px 10px;
+  margin: 20px;
+  border: 1px solid #241e5d;
+
+  h3 {
+    border-bottom: 1px solid #241e5d;
+  }
+
+  h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
+
+em {
+  font-size: 16px;
+}
+
+.item {
+  div {
+    width: 132px;
+    height: 135px;
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid #241e5d;
+  }
+
+  img {
+    object-fit: contain;
+    max-height: 100%;
+    min-width: 100%;
+  }
+}
+
+.indentation {
+  border: 1px solid #241e5d;
+
+  h4 {
+    margin: 4.45px 0;
+  }
+
+  p {
+    margin: 16px 0;
+  }
+}

@@ -1,0 +1,39 @@
+.card_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .teamitem {
+    display: flex;
+    justify-content: center;
+    flex-basis: 50%;
+    margin: 15px 0;
+    padding: 5px;
+    width: 50%;
+
+    div {
+      width: 282px;
+      height: 182px;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    img {
+      object-fit: contain;
+      max-height: 80%;
+      max-width: 80%;
+    }
+  }
+}
+
+.investors {
+  width: 282px;
+  height: 182px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(24, 20, 62, 0.65);
+  border: 1px solid #241e5d;
+}
