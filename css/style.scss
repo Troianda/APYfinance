@@ -1,0 +1,82 @@
+@import 'reset';
+@import 'normalize';
+@import 'typography';
+@import 'base'; // Нада для разных классов
+@import 'view'; // НАДА ДЛЯ ТОГО ШОБ ПЕРЕОПРЕДИЛИТЬ ДЕФОЛТНИ КЛАССИ + верстка секций
+@import 'sections/projects';
+@import 'sections/team';
+@import 'menu';
+
+section {
+  border: 2px solid white;
+}
+@media screen and (max-width: 992px) {
+  body {
+    background-color: rgb(13, 2, 33);
+  }
+
+  .section__projects {
+    .card_wrapper {
+      display: block;
+    }
+  }
+
+  .wright_wrapper {
+    .button,
+    .menu-d {
+      display: none;
+    }
+
+    .active {
+      position: fixed;
+
+      ul {
+        display: flex;
+        align-items: center;
+      }
+
+      li {
+        display: block;
+        text-align: center;
+      }
+    }
+
+    .menu-m {
+      height: 100vh;
+      width: 100vw;
+      background-color: rgb(13, 2, 33);
+      left: 0;
+      top: 0;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .contain {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .section__projects h2 {
+    font-size: 2.2rem;
+    white-space: pre-wrap;
+  }
+
+  .card_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .apy img {
+    display: none;
+  }
+}
+/* On screens that aаre 600px wide or less, the background color is olive */
